@@ -1,0 +1,140 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #333, #444); /* dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    background: #222; /* dark container background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    color: #fff; /* high contrast text color */
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* high contrast text color */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"], input[type="time"], button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    flex: 1;
+    background: #333; /* dark input background */
+    color: #fff; /* high contrast text color */
+}
+
+input[type="text"]:focus {
+    background: #444; /* dark input background on focus */
+}
+
+input[type="date"], input[type="time"] {
+    background: #333; /* dark input background */
+    color: #fff; /* high contrast text color */
+}
+
+button {
+    background-color: aqua; /* keep the original button color */
+    color: #fff; /* high contrast text color */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #f50057; /* keep the original button hover color */
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.lists {
+    margin-top: 20px;
+}
+
+.list {
+    border-top: 1px solid #555; /* dark border color */
+    padding-top: 10px;
+}
+
+.list h2 {
+    font-size: 1.8em;
+    color: #fff; /* high contrast text color */
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #333; /* dark list item background */
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff; /* high contrast text color */
+}
+
+li.completed {
+    background: #444; /* dark completed list item background */
+    text-decoration: line-through;
+    color: #a2c4a7; /* keep the original completed text color */
+}
+
+.edit-btn, .delete-btn {
+    background: #333; /* dark button background */
+    border: 1px solid #555; /* dark border color */
+    color: #fff; /* high contrast text color */
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.edit-btn:hover {
+    background-color: #444; /* dark button hover background */
+    color: #90c2f0; /* keep the original button hover color */
+}
+
+.delete-btn:hover {
+    background-color: #444; /* dark button hover background */
+    color: blue; /* keep the original button hover color */
+}
+
+.date-time {
+    font-size: 12px;
+    color: #fff; /* high contrast text color */
+    margin-left: 10px;
+}
